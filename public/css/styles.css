@@ -1,0 +1,533 @@
+body{
+    background-color: white;
+}
+.detail-btn{
+    margin-top: 15px;
+    margin-right: 40px;
+}
+.navbar{
+    margin-bottom: 50px;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+
+.image-root {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-root img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-child{
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+.img-child .img{
+    width: calc(25% - 20px);
+    margin: 10px;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    float: left;
+}
+/*Nếu cần tăng chiều dài của slide thì tăng ở đây*/
+.carousel-item{
+    height: 300px;
+}
+/*Nếu tăng chiều dài ở trên thì phải chỉnh min-height ở đây theo nó để ảnh nó bao hết carousel-item*/
+.carousel-item img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+/*Chinh vi tri cho indicator
+bottom là khoảng cách từ thằng element này đến border-bottom(cạnh bên dưới) của thằng cha bao ngoài gần nhất có thuộc tính là position=relative
+*/
+.carousel-indicators{
+    bottom: -150px;
+}
+.carousel-control-next,.carousel-control-prev{
+    top: 375px;
+}
+
+/*width và height ở đây để chỉnh kích cỡ ảnh indicator*/
+.carousel-indicators li{
+    width: 60px;
+    height: 60px;
+    text-indent: inherit;
+}
+/*đây là kích cỡ khi ảnh được active*/
+.carousel-indicators .active{
+    width: 65px;
+    height: 65px;
+    /*transition: 1s;*/
+}
+
+/*Đây nhé đổi màu của 2 mũi tên thì tìm đến cái thuộc tinh fill=%23+mã màu ở dưới kia.*/
+/*Màu sẽ là bảng mã hexa của màu đấy ví dụ trắng là %23fff, đen là %23000, đỏ là %23f00. Tìm bảng màu thì lên google gõ Material color.*/
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+.carousel-indicators li[class="active"]>img{
+    border: red 1px solid ;
+}
+.left-content{
+    min-height: 450px;
+}
+.tab-content {
+    padding: 10px;
+}
+.nav-tabs >.nav-item>a{
+    font-size:20px;
+}
+.nav-link.active{
+    border: none !important;
+    border-bottom: 1px solid red !important;
+}
+.nav-link{
+    font-weight: bold;
+    color: #a9a9a9;
+}
+
+.nav-link:hover{
+    color: #333333;
+}
+.myform-label::before{
+    content: '* ';
+    color: #F00;
+    font-weight: bold;
+}
+.help-block{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #737373;
+}
+label{
+    font-size: 13px;
+    font-weight: normal;
+}
+.inner{
+    border: 1px solid #ebebeb;
+    padding: 20px;
+    min-height: 450px;
+}
+.product-name{
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 0px 0 22px 0;
+    background: none;
+    font-weight: 300;
+    line-height: 1;
+}
+.price-box{
+    display: block;
+    margin-bottom: 7px;
+    margin-top: 4px;
+}
+.price{
+    color: #f72525;
+    font-size: 32px;
+    font-weight: 700;
+}
+.regular-price>.price{
+    color: #f72525;
+    font-size: 16px;
+    font-weight: 700;
+}
+ul.list-unstyled{
+    padding: 2px 0;
+    margin-bottom: 18px;
+    position: relative;
+    font-size: 13px;
+}
+ul.list-unstyled li{
+    display: block;
+    line-height: 24px;
+}
+ul.list-unstyled li a{
+    color: #f72525;
+    font-weight: 700;
+}
+ul.list-unstyled li span{
+    color: #f72525;
+}
+.short-des{
+    line-height: 20px;
+    margin-bottom: 12px;
+    padding: 23px 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: lighter;
+}
+.module-title {
+    position: relative;
+    display: block;
+    margin-top: 34px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.module-title h2 {
+    position: relative;
+    text-transform: capitalize;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 10px;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*.fa-star{*/
+/*font-size: 1px;*/
+/*color: #E0E0E0;*/
+/*}*/
+
+/*Để giống hệt bài kia, e tăng kích cỡ ảnh trong indicator lên. Thêm margin-left + margin-right cho nó giãn cách nhau ra. Đổi màu 2 mũi tên thành đen rồi set vị trí cho thẳng hàng*/
+/*Vì bootstrap nó để sẵn position của 2 mũi tên với bọn indicator là absolute và nó set theo bottom + top nên mình sẽ dùng luôn*/
+/*Footer*/
+.site-footer
+{
+    background-color: white;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
+}
+.site-footer hr
+{
+    border-top-color:#bbb;
+    opacity:0.5
+}
+.site-footer hr.small
+{
+    margin:20px 0
+}
+.site-footer h6
+{
+    color:#000;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px
+}
+.site-footer a
+{
+    color:#737373;
+}
+.site-footer a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+.footer-links
+{
+    padding-left:0;
+    list-style:none
+}
+.footer-links li
+{
+    display:block
+}
+.footer-links a
+{
+    color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+    color:#3366cc;
+    text-decoration:none;
+}
+.footer-links.inline li
+{
+    display:inline-block
+}
+.site-footer .social-icons
+{
+    text-align:right
+}
+
+.site-footer .social-icons a
+{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d
+}
+
+.copyright-text
+{
+    margin:0
+}
+
+@media (max-width:991px)
+{
+    .site-footer [class^=col-]
+    {
+        margin-bottom:30px
+    }
+}
+@media (max-width:767px)
+{
+    .site-footer
+    {
+        padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+        text-align:center
+    }
+}
+
+.social-icons
+{
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none
+}
+
+.social-icons li
+{
+    display:inline-block;
+    margin-bottom:4px
+}
+
+.social-icons li.title
+{
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#96a2b2;
+    font-weight:700;
+    font-size:13px
+}
+
+.social-icons a{
+    color:#fff;
+    background-color:#29aafe;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+}
+
+.social-icons.size-sm a
+{
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14px
+}
+
+.social-icons a.facebook
+{
+    background-color:#3b5998
+}
+
+.social-icons a.twitter
+{
+    background-color:#00aced
+}
+
+/*<<<<<<< HEAD*/
+.social-icons a.linkedin
+{
+    background-color:#007bb6
+}
+
+.social-icons a.dribbble
+{
+    background-color:#ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
+
+/*=======*/
+/*footer{*/
+/*height: 500px;*/
+/*>>>>>>> 7fadd4cad27ee230f12894447b2c11c0a4347b9e*/
+/*}*/
+.bg-header{
+    position: absolute;
+    width: 100%;
+    height: 670px;
+    background-color: #f0f0ee;
+}
+.header {
+    background-color: #f0f0ee;
+    display: block;
+    position: sticky;
+    top:0;
+    width: 100%;
+    height: 60px;
+    z-index: 3;
+}
+
+nav{
+    height: 60px;
+}
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: transparent;
+    display: block;
+}
+
+.header li{
+    cursor: pointer;
+}
+
+.header li a {
+    display: block;
+    background-color: transparent;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header li a:hover{
+    color: #f72524;
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+}
+
+.checked {
+    color: orange;
+}

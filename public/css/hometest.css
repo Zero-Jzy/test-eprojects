@@ -1,0 +1,75 @@
+.banner{
+    font-size: 30px;
+    border-bottom: solid 0.5px;
+    margin-bottom: 30px;
+}
+a{
+    margin-right: 50px;
+}
+#carousel-example-2{
+    margin-bottom: 20px;
+    border-bottom: solid 1px;
+}
+.products{height: 300px;
+
+    width: 24%;
+    display: inline-block;
+    background-color: white;
+    padding: 26px;
+}
+p{
+    width: 115%;
+    padding: 3px;
+}
+.card{
+    height: 376px;
+}
+.b{
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: 1px black solid;
+}
+.productstop3{
+    width: 32%;
+    display: inline-block;
+    background-color: white;
+    padding: 26px;
+    text-align: center;
+    font-size: 30px;
+
+}
+u{
+
+    font-size: 70px;
+    margin-top: 30px;
+}
+img.logo1{
+    margin-right: 90px;
+}
+.btop3{
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+img.logo{
+    border-radius: 60%;
+    width: 120px;
+    border:2px black solid;
+}
+img.top3{
+    border-radius: 100%;
+    width: 400px;
+    margin-left: 100px;
+}
+.duoi{
+    border: 3px dashed black;
+}
+.header{
+    display: inline-block;
+    height: 150px;
+}
